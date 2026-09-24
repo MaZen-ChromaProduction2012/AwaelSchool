@@ -153,5 +153,22 @@
 </footer>
 
 <script src="main.js"></script>
+<button id="faq-toggle" aria-label="اسأل عن المدرسة" aria-expanded="false"><i class="fa-solid fa-comment-dots"></i></button>
+<div id="faq-panel" role="dialog" aria-label="اسأل عن المدرسة">
+  <div class="faq-head">
+    <span><i class="fa-solid fa-wand-magic-sparkles"></i>اسأل عن المدرسة</span>
+    <button id="faq-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="faq-messages" id="faqMessages">
+    <div class="faq-bubble faq-bubble-bot"><p>أهلاً! اسألني أي حاجة عن مدرسة براعم الأوائل.</p></div>
+  </div>
+  <div class="faq-starters" id="faqStarters"></div>
+  <form id="faqForm">
+    <input type="text" id="faq-input" placeholder="اكتب سؤالك..." autocomplete="off">
+    <button type="submit" id="faq-send" aria-label="إرسال"><i class="fa-solid fa-paper-plane"></i></button>
+  </form>
+</div>
+<script src="bot.js"></script>
+
 </body>
 </html>
